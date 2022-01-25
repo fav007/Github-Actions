@@ -13,8 +13,7 @@ jobs:
     
 name: Python Linter & Tests
 
-on:
-  push:
+on: [push]
 
 jobs:
   build:
