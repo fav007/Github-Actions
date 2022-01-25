@@ -10,4 +10,7 @@ jobs:check-python-version:
       - run: |
           python --version
           pipenv --python 3.9
+          pipenv install nose pylint --dev
+          pipenv run pylint "app/tests/test_example.py"
+
           
